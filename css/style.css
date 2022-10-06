@@ -6,10 +6,46 @@
 }
 
 .header {
-  background-color: red;
+  background-color: transparent;
+  border: 1px solid red;
+  transition: all 0.4s ease 0s;
+  background-color: rebeccapurple;
 }
 .header .container .row .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header .container .row .navbar .navbar-left .navbar-logo a {
+  font-size: 26px;
+  text-decoration: none;
+  font-family: "Volkhov", serif;
+  color: #fb811e;
+  position: relative;
+}
+.header .container .row .navbar .navbar-left .navbar-logo a i {
+  position: absolute;
+  top: -4px;
+  left: 38px;
+  font-size: 14px;
+}
+.header .container .row .navbar .navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .row .navbar .navbar-right .navbar-search {
+  margin: 0 10px;
+}
+.header .container .row .navbar .navbar-right .navbar-search input {
+  outline: none;
+  border: none;
+  background: #fff url(../../img/search.png) no-repeat 7px center;
+  border: solid 1px #eee;
+  padding: 0 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  transition: all 0.5s;
+  cursor: pointer;
 }

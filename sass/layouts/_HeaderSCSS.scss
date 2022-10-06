@@ -1,5 +1,9 @@
+@import "./../utils/variables";
 .header {
-  background-color: red;
+  background-color: transparent;
+  border: 1px solid red;
+  transition: all 0.4s ease 0s;
+  background-color: rebeccapurple;
   .container {
     .row {
       .navbar {
@@ -7,11 +11,40 @@
         align-items: center;
         justify-content: space-between;
         .navbar-left {
-          .nabar-logo {
+          .navbar-logo {
+            a {
+              font-size: 26px;
+              text-decoration: none;
+              font-family: "Volkhov", serif;
+              color: $secondary-color;
+              position: relative;
+              i {
+                position: absolute;
+                top: -4px;
+                left: 38px;
+                font-size: 14px;
+              }
+            }
           }
         }
         .navbar-right {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
           .navbar-search {
+            margin: 0 10px;
+            input {
+              outline: none;
+              border: none;
+              background: #fff url(../../img/search.png) no-repeat 7px center;
+              border: solid 1px #eee;
+              padding: 0 10px;
+              width: 30px;
+              height: 30px;
+              border-radius: 30px;
+              transition: all 0.5s;
+              cursor: pointer;
+            }
           }
           .navbar-theme {
           }
