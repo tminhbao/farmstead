@@ -52,12 +52,19 @@
               </div>
 
               <!-- Switch Theme  -->
-              <div class="navabar-theme theme-switch-wrapper">
+              <div class="navbar-theme theme-switch-wrapper">
                 <label class="theme-switch" for="checkbox">
                   <!-- <input type="checkbox" id="checkbox" /> -->
                   <div class="mode-container">
-                    <i class="fa-regular fa-sun toggle-theme-icon"></i>
-                    <i class="fa-regular fa-moon toggle-theme-icon"></i>
+                    <i
+                      class="fa-regular fa-moon toggle-theme-icon"
+                      onclick="changeTheme(this)"
+                    ></i>
+                    <i
+                      class="fa-regular fa-sun toggle-theme-icon"
+                      onclick="changeTheme(this)"
+                    ></i>
+                    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
                   </div>
                 </label>
               </div>
@@ -65,7 +72,7 @@
               <!-- Link  -->
               <div class="navbar-link">
                 <a href="#">Home</a>
-                <a href="#">Aout</a>
+                <a href="#">About</a>
                 <a href="#">Services</a>
                 <a href="#">Blog Posts</a>
                 <a href="#">Landing Page</a>

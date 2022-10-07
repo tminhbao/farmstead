@@ -1,9 +1,8 @@
 @import "./../utils/variables";
 .header {
   background-color: transparent;
-  border: 1px solid red;
   transition: all 0.4s ease 0s;
-  background-color: rebeccapurple;
+  box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
   .container {
     .row {
       .navbar {
@@ -47,8 +46,25 @@
             }
           }
           .navbar-theme {
+            .toggle-theme-icon {
+              &:hover {
+                color: $secondary-color;
+                cursor: pointer;
+              }
+            }
           }
           .navbar-link {
+            a {
+              text-decoration: none;
+              padding: 0 14px;
+              text-transform: uppercase;
+              color: $text-color;
+              font-weight: 600;
+              &:hover {
+                color: $secondary-color;
+                transition: all 0.5s;
+              }
+            }
           }
         }
       }

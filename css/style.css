@@ -7,9 +7,8 @@
 
 .header {
   background-color: transparent;
-  border: 1px solid red;
   transition: all 0.4s ease 0s;
-  background-color: rebeccapurple;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
 }
 .header .container .row .navbar {
   display: flex;
@@ -48,4 +47,19 @@
   border-radius: 30px;
   transition: all 0.5s;
   cursor: pointer;
+}
+.header .container .row .navbar .navbar-right .navbar-theme .toggle-theme-icon:hover {
+  color: #fb811e;
+  cursor: pointer;
+}
+.header .container .row .navbar .navbar-right .navbar-link a {
+  text-decoration: none;
+  padding: 0 14px;
+  text-transform: uppercase;
+  color: #707070;
+  font-weight: 600;
+}
+.header .container .row .navbar .navbar-right .navbar-link a:hover {
+  color: #fb811e;
+  transition: all 0.5s;
 }
