@@ -1,10 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
-</html>
+@import "./../utils/variables";
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif !important;
+  .container-fluid {
+    .row {
+      .banner-left {
+        position: absolute;
+        top: 12px;
+        left: 100px;
+        z-index: 1;
+        .banner-left-content {
+          h2 {
+            color: #f4f4f4;
+            font-size: 120px;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          .banner-left-desc {
+            position: relative;
+            top: 80px;
+            left: 24px;
+            h3 {
+              font-size: 50px;
+              line-height: 60px;
+              font-weight: bold;
+            }
+            p {
+              font-size: 16px;
+            }
+            a {
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+      .banner-right {
+        .slider {
+          .carousel.slide {
+            .carousel-indicators {
+              button {
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+              }
+              button.active {
+                background-color: $secondary-color;
+              }
+            }
+          }
+          .carousel-inner {
+            height: 720px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}

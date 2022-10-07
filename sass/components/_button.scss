@@ -1,0 +1,18 @@
+@import "./../utils/variables";
+
+.btn-style {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  font-weight: 600;
+  background: $secondary-color;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
