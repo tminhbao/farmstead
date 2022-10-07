@@ -6,7 +6,7 @@
   left: 0;
   width: 100%;
   font-family: "Source Sans Pro", sans-serif !important;
-  .container {
+  .container-fluid {
     .row {
       .banner-left {
         position: absolute;
@@ -55,7 +55,7 @@
             }
           }
           .carousel-inner {
-            height: 100%;
+            height: 720px;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
           }
