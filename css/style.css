@@ -5,6 +5,23 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.btn-style {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  font-weight: 600;
+  background: #fb811e;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.25s ease-in-out;
+}
+.btn-style:hover {
+  background-color: #009f4d;
+  color: #fff;
+}
+
 .header {
   background-color: transparent;
   transition: all 0.4s ease 0s;
@@ -62,4 +79,35 @@
 .header .container .row .navbar .navbar-right .navbar-link a:hover {
   color: #fb811e;
   transition: all 0.5s;
+}
+
+.banner {
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+.banner .container .row .banner-left {
+  position: absolute;
+  top: 12px;
+  left: 100px;
+  z-index: 1;
+}
+.banner .container .row .banner-left .banner-left-content h2 {
+  color: #f4f4f4;
+  font-size: 120px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner .container .row .banner-left .banner-left-content .banner-left-desc {
+  position: relative;
+  top: 80px;
+  left: 24px;
+}
+.banner .container .row .banner-left .banner-left-content .banner-left-desc h3 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: bold;
+}
+.banner .container .row .banner-left .banner-left-content .banner-left-desc p {
+  font-size: 16px;
 }

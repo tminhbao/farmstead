@@ -1,0 +1,40 @@
+@import "./../utils/variables";
+
+.banner {
+  font-family: "Source Sans Pro", sans-serif !important;
+  .container {
+    .row {
+      .banner-left {
+        position: absolute;
+        top: 12px;
+        left: 100px;
+        z-index: 1;
+        .banner-left-content {
+          h2 {
+            color: #f4f4f4;
+            font-size: 120px;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          .banner-left-desc {
+            position: relative;
+            top: 80px;
+            left: 24px;
+            h3 {
+              font-size: 50px;
+              line-height: 60px;
+              font-weight: bold;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .banner-right {
+      }
+    }
+  }
+}
