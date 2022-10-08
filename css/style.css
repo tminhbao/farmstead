@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Volkhov", serif;
 }
 
 .btn-style {
@@ -16,6 +16,7 @@
   color: #fff;
   border-radius: 30px;
   transition: all 0.25s ease-in-out;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .btn-style:hover {
   background-color: #009f4d;
@@ -130,7 +131,12 @@
   background-color: #fb811e;
 }
 .banner .container-fluid .row .banner-right .slider .carousel-inner {
-  height: 720px;
+  height: 710px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.feature {
+  padding-top: 800px;
+  border: 1px solid brown;
 }

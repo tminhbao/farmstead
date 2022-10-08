@@ -55,7 +55,7 @@
             }
           }
           .carousel-inner {
-            height: 720px;
+            height: 710px;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
           }
@@ -63,4 +63,9 @@
       }
     }
   }
+}
+
+.feature {
+  padding-top: 800px;
+  border: 1px solid brown;
 }
