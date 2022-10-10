@@ -20,6 +20,11 @@
               font-family: "Volkhov", serif;
               color: $secondary-color;
               position: relative;
+              transition: all 0.75s;
+              &:hover {
+                color: #000 !important;
+              }
+
               i {
                 position: absolute;
                 top: -4px;
