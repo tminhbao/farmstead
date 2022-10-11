@@ -564,3 +564,240 @@
   font-family: "Source Sans Pro", sans-serif !important;
   color: #fff;
 }
+
+.inner-banner {
+  background-image: url(../../img/inner-banner.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  padding: 100px 0;
+}
+.inner-banner .container .breadcrumb h4 {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+}
+.inner-banner .container .breadcrumb .breadcrumb-content {
+  font-size: 12px;
+  color: #707070;
+}
+.inner-banner .container .breadcrumb .breadcrumb-content a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.5s;
+}
+.inner-banner .container .breadcrumb .breadcrumb-content a:hover {
+  color: #fb811e;
+}
+
+.about .container .about-right-wrapper img {
+  border-radius: 10px;
+}
+
+.stat .container .row .counter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stat .container .row .counter-wrapper i {
+  color: #009f4d;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  background: rgba(0, 159, 77, 0.04);
+  font-size: 32px;
+}
+.stat .container .row .counter-wrapper .counter {
+  font-size: 2em;
+  font-weight: 600;
+  color: #000;
+}
+.stat .container .row .counter-wrapper p {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 10px;
+}
+
+.team {
+  background-color: #009f4d;
+  padding: 80px 0;
+}
+.team .container .team-content h5 {
+  font-size: 18px;
+  color: #fff;
+}
+.team .container .team-content h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+.team .container .team-content h4 {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  z-index: 0;
+  opacity: 0.14;
+  font-size: 12vw;
+  right: 50%;
+  /* left: 0; */
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+.team .container .team-content p {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+.team .container .team-list .team-item {
+  background: #fff;
+  padding: 1em;
+  border-radius: 8px;
+}
+.team .container .team-list .team-item .team-head {
+  position: relative;
+  overflow: hidden;
+}
+.team .container .team-list .team-item .team-head .team-img {
+  position: relative;
+}
+.team .container .team-list .team-item .team-head .team-img img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+  width: 100%;
+}
+.team .container .team-list .team-item .team-head .team-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgba(8, 8, 8, 0.54);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.team .container .team-list .team-item .team-head .team-hover:hover {
+  opacity: 1;
+}
+.team .container .team-list .team-item .team-head .team-hover .desk {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-55%);
+  transition: all 0.8s;
+  padding: 0 20px;
+  text-align: center;
+}
+.team .container .team-list .team-item .team-head .team-hover .desk h4 {
+  margin-bottom: 4px;
+}
+.team .container .team-list .team-item .team-head .team-hover .desk h4 a {
+  text-decoration: none;
+  transition: all 0.5s;
+  color: #fff;
+}
+.team .container .team-list .team-item .team-head .team-hover .desk h4 a:hover {
+  color: #fb811e;
+}
+.team .container .team-list .team-item .team-head .team-hover .desk p {
+  color: #fff;
+}
+:hover .team .container .team-list .team-item .team-head .team-hover .desk {
+  opacity: 1;
+  transform: translateY(30%);
+}
+.team .container .team-list .team-item .team-head .team-hover .s-link {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  transform: translateY(45%);
+  transition: all 0.75s;
+  font-size: 35px;
+}
+:hover .team .container .team-list .team-item .team-head .team-hover .s-link {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+.team .container .team-list .team-item .team-head .team-hover .s-link a {
+  margin: 0 10px;
+  color: #1e272e;
+  font-size: 16px;
+  text-align: center;
+}
+.team .container .team-list .team-item .team-head .team-hover .s-link a i {
+  color: #fff;
+  transition: all 0.5s;
+}
+.team .container .team-list .team-item .team-head .team-hover .s-link a i:hover {
+  color: #fb811e;
+}
+.team .container .team-list .team-item .team-body {
+  text-align: center;
+}
+.team .container .team-list .team-item .team-body h5 a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.5s;
+}
+.team .container .team-list .team-item .team-body h5 a:hover {
+  color: #fb811e;
+}
+.team .container .team-list .team-item .team-body span {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.healthy-product {
+  padding: 60px 0;
+}
+.healthy-product .container .text-center h3 {
+  font-weight: 600;
+}
+.healthy-product .container .text-center p {
+  font-size: 18px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #707070;
+}
+.healthy-product .container .text-center .video-product .video-product-img {
+  position: relative;
+}
+.healthy-product .container .text-center .video-product .video-product-img img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+  width: 100%;
+}
+.healthy-product .container .text-center .video-product .video-product-img a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.healthy-product .container .text-center .video-product .video-product-img a span.video-play-icon {
+  background: #fff;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  -webkit-animation: ripple 1s linear infinite;
+  animation: ripple 1s linear infinite;
+}
+.healthy-product .container .text-center .video-product .video-product-img a span.video-play-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.healthy-product .container .text-center .video-product .video-product-img a span.video-play-icon span.fa-play {
+  color: #fb811e;
+}
+.healthy-product .container .text-center .video-product .modal.fade .modal-dialog {
+  height: 100%;
+}
