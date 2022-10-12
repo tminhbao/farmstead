@@ -801,3 +801,80 @@
 .healthy-product .container .text-center .video-product .modal.fade .modal-dialog {
   height: 100%;
 }
+
+.services .container .services-item {
+  padding: 50px 35px;
+  z-index: 1;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.03);
+}
+.services .container .services-item:hover {
+  transition: 0.3s;
+  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.services .container .services-item i {
+  color: #fb811e;
+  font-size: 30px;
+}
+.services .container .services-item h4 a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  font-weight: 800;
+  transition: all 0.3s;
+}
+.services .container .services-item h4 a:hover {
+  color: #fb811e;
+}
+.services .container .services-item p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #707070;
+}
+
+.quality-food .container .quality-food-left img {
+  width: 100%;
+  border-radius: 20px;
+}
+.quality-food .container .quality-food-right .quality-food-content > h5 {
+  color: #fb811e;
+  font-size: 22px;
+}
+.quality-food .container .quality-food-right .quality-food-content h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #000;
+}
+.quality-food .container .quality-food-right .quality-food-content p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #707070;
+}
+.quality-food .container .quality-food-right .quality-food-content .col-sm-6.d-flex i {
+  font-size: 30px;
+  color: #fb811e;
+}
+.quality-food .container .quality-food-right .quality-food-content .col-sm-6.d-flex .content-content h5 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.contact {
+  background-image: url(../../img/bg2.jpg);
+  height: 300px;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+}
+.contact .container .contact-content h5 {
+  color: #fff;
+}
+.contact .container .contact-content h3 {
+  color: #fff;
+  margin: 4px 0;
+}
+.contact .container .contact-content a {
+  text-decoration: none;
+}
