@@ -5,10 +5,12 @@
 
 @import "./layouts/header";
 @import "./layouts/footer";
-@import "./layouts/HeaderSCSS";
-@import "./layouts/FooterSCSS";
 
 @import "./pages/index";
 @import "./pages/about";
 @import "./pages/services";
+@import "./pages/blog";
+@import "./pages/404";
+@import "./pages/contact";
+
 @import "./utils/variables";

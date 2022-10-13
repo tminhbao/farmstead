@@ -1,4 +1,9 @@
 const searchElement = document.querySelector("input");
+const page2 = document.getElementById("page-2");
+const next1 = document.getElementById("next-1");
+const backToTop = document.getElementById("backToTop");
+const showGoToTop = 100;
+console.log("first");
 
 searchElement.onclick = function () {
   const navbarSearchElement = document.querySelector(".navbar-search");
@@ -13,7 +18,7 @@ const sunIconElement = document.querySelector(".fa-sun");
 const moonIconElement = document.querySelector(".fa-moon");
 
 const changeTheme = function (x) {
-  x.classList.remove("fa-regular fa-moon toggle-theme-icon");
+  x.classList.remove("fa-regular fa-moon tsoggle-theme-icon");
   x.classList.add("fa-regular fa-sun toggle-theme-icon");
 };
 
@@ -24,3 +29,57 @@ function myFunction(x) {
 document.querySelector(".video-play-icon").onclick = function () {
   document.querySelector("small-dialog").classList.toggle("mfp-hide");
 };
+// GO TA PAGE 2
+page2.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.location.href = "page2.html";
+});
+
+next1.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.location.href = "page2.html";
+});
+
+// BACK TO TOP
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= 300) {
+      $("#backToTop").fadeIn();
+    } else {
+      $("#backToTop").fadeOut();
+    }
+
+    $("#backToTop").click(function () {
+      $("html", "body").animate({ scrollTop: 0 }, 1000);
+    });
+  });
+});
+
+// SHOW MENU
+const menuLink = document.getElementById("nav-link");
+const menuButton = document.getElementById("menu-button");
+menuButton.addEventListener("click", function () {
+  // menuLink.style.display = 'none';
+  menuLink.classList.toggle("active");
+});
+
+// CHANGE NAVBAR CSS
+const headerChange = document.querySelector(".header");
+const logoChange = document.querySelector(".logo");
+const menuIconChange = document.querySelector(".fa-bars");
+const navbarChange = document.querySelector(".navbar");
+document.addEventListener("scroll", () => {
+  if (document.documentElement.scrollTop > 50) {
+    headerChange.classList.add("change-css");
+    logoChange.classList.add("change-css");
+    menuIconChange.classList.add("change-css");
+    navbarChange.classList.add("change-css");
+    console.log(headerChange);
+    console.log("DA AN SCROLL");
+  } else {
+    headerChange.classList.remove("change-css");
+    logoChange.classList.remove("change-css");
+    menuIconChange.classList.remove("change-css");
+    navbarChange.classList.remove("change-css");
+  }
+});
