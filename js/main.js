@@ -1,4 +1,9 @@
 const searchElement = document.querySelector("input");
+const page2 = document.getElementById("page-2");
+const next1 = document.getElementById("next-1");
+const backToTop = document.getElementById("backToTop");
+const showGoToTop = 100;
+
 
 searchElement.onclick = function () {
   const navbarSearchElement = document.querySelector(".navbar-search");
@@ -13,10 +18,63 @@ const sunIconElement = document.querySelector(".fa-sun");
 const moonIconElement = document.querySelector(".fa-moon");
 
 const changeTheme = function (x) {
-  x.classList.remove("fa-regular fa-moon toggle-theme-icon");
+  x.classList.remove("fa-regular fa-moon tsoggle-theme-icon");
   x.classList.add("fa-regular fa-sun toggle-theme-icon");
 };
 
 function myFunction(x) {
   x.classList.toggle("fa-thumbs-down");
 }
+
+// GO TA PAGE 2
+page2.addEventListener("click",function(e) {
+  e.preventDefault();
+  document.location.href = "page2.html";
+})
+
+next1.addEventListener("click",function(e) {
+  e.preventDefault();
+  document.location.href = "page2.html";
+})
+
+
+// BACK TO TOP 
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop()>=300) {
+      $('#backToTop').fadeIn();
+    } else {
+      $('#backToTop').fadeOut();
+    }
+ 
+  $('#backToTop').click(function(){
+    $('html', 'body').animate({scrollTop: 0}, 1000);
+  })
+  })
+})
+
+// SHOW MENU 
+const menuLink = document.getElementById('nav-link');
+const menuButton = document.getElementById('menu-button');
+    menuButton.addEventListener("click", function(){
+    // menuLink.style.display = 'none';
+    menuLink.classList.toggle('active');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

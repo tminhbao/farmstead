@@ -1,0 +1,92 @@
+@import "./../utils/variables";
+
+header {
+  background-image: url(/img/inner-banner.png);
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 300px;
+  .container {
+    .navbar {
+      // height: 60px;
+      padding: 20px 60px;
+      position: fixed;
+      // z-index: 1;
+      .navbar-left {
+          .logo {
+            font-size: 32px;
+            text-decoration: none;
+            font-family: "Volkhov", serif;
+            color: $secondary-color;
+            position: relative;
+            i {
+              position: absolute;
+              top: -4px;
+              left: 38px;
+              font-size: 17px;
+            }
+          }
+        }
+      }
+      .menu {
+        margin-left: 900px;
+        #nav-link {
+          list-style: none;
+          width: 250px;
+          text-align: center;
+          background-color: #ffffff;
+          border-radius: 5px;
+          position: absolute;
+          top: 65px;
+          right: 60px;
+          margin: 0;
+          padding: 0;
+          display: none;
+          cursor: pointer;
+          li {
+            padding: 5px 0;
+            a {
+              text-decoration: none;
+              text-transform: uppercase;
+              color: $main-text-color;
+              font-weight: 600;
+              &:hover {
+                color: $secondary-color;
+                transition: all 0.5s;
+              }
+            }
+          }
+        } 
+      }
+      .navbar-right {
+        .navbar-search {
+          input {
+            outline: none;
+            border: none;
+            background: #fff url(../../img/search.png) no-repeat 7px center;
+            border: solid 1px #eee;
+            padding: 0 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            transition: all 0.5s;
+            cursor: pointer;
+          }
+        }
+        .navbar-theme {
+          padding: 0 10px;
+          .toggle-theme-icon {
+            &:hover {
+              color: $secondary-color;
+              cursor: pointer;
+            }
+          }
+        }
+        #menu-button {
+            font-size: 20px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+      }
+    }
+  }
