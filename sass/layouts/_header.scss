@@ -1,17 +1,22 @@
 @import "./../utils/variables";
 
-header {
+.header {
+  background-color: transparent;
   background-image: url(/img/inner-banner.png);
-  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   right: 0;
   height: 300px;
+  width: 100%;
+  position: fixed;
+  transition: all .5s;
+  z-index: 100;
   .container {
     .navbar {
-      // height: 60px;
-      padding: 20px 60px;
-      position: fixed;
-      // z-index: 1;
+      width: 100%;
+      margin: 0 auto;
+      z-index: 2;
       .navbar-left {
           .logo {
             font-size: 32px;
@@ -19,18 +24,23 @@ header {
             font-family: "Volkhov", serif;
             color: $secondary-color;
             position: relative;
+            transition: all .3s;
             i {
               position: absolute;
               top: -4px;
               left: 38px;
               font-size: 17px;
             }
+          
           }
-        }
+          .logo.change-css {
+            color: #060606;
+          }
       }
+      
       .menu {
-        margin-left: 900px;
-        #nav-link {
+        .nav-link {
+          display: block;
           list-style: none;
           width: 250px;
           text-align: center;
@@ -57,8 +67,13 @@ header {
             }
           }
         } 
+        ul#nav-link.nav-link.active {
+          display: block;
+        }
       }
       .navbar-right {
+        // position: absolute;
+        // right: 0;
         .navbar-search {
           input {
             outline: none;
@@ -84,9 +99,27 @@ header {
         }
         #menu-button {
             font-size: 20px;
+            font-weight: bold;
             color: #ffffff;
             cursor: pointer;
+            transition: all .3s;
+        }
+        #menu-button.change-css {
+          color: #060606;
         }
       }
     }
+    .navbar.change-css {
+      padding-top: 15px;
+    }
   }
+}
+
+.header.change-css {
+  background-image: none;
+  background-color: #ffffff;
+  height: 70px;
+} 
+
+
+

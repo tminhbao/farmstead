@@ -30,34 +30,43 @@ ul {
   color: #fff;
 }
 
-header {
+.header {
+  background-color: transparent;
   background-image: url(/img/inner-banner.png);
-  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   right: 0;
   height: 300px;
-}
-header .container .navbar {
-  padding: 20px 60px;
+  width: 100%;
   position: fixed;
+  transition: all 0.5s;
+  z-index: 100;
 }
-header .container .navbar .navbar-left .logo {
+.header .container .navbar {
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+}
+.header .container .navbar .navbar-left .logo {
   font-size: 32px;
   text-decoration: none;
   font-family: "Volkhov", serif;
   color: #fb811e;
   position: relative;
+  transition: all 0.3s;
 }
-header .container .navbar .navbar-left .logo i {
+.header .container .navbar .navbar-left .logo i {
   position: absolute;
   top: -4px;
   left: 38px;
   font-size: 17px;
 }
-header .container .menu {
-  margin-left: 900px;
+.header .container .navbar .navbar-left .logo.change-css {
+  color: #060606;
 }
-header .container .menu #nav-link {
+.header .container .navbar .menu .nav-link {
+  display: block;
   list-style: none;
   width: 250px;
   text-align: center;
@@ -71,20 +80,23 @@ header .container .menu #nav-link {
   display: none;
   cursor: pointer;
 }
-header .container .menu #nav-link li {
+.header .container .navbar .menu .nav-link li {
   padding: 5px 0;
 }
-header .container .menu #nav-link li a {
+.header .container .navbar .menu .nav-link li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #060606;
   font-weight: 600;
 }
-header .container .menu #nav-link li a:hover {
+.header .container .navbar .menu .nav-link li a:hover {
   color: #fb811e;
   transition: all 0.5s;
 }
-header .container .navbar-right .navbar-search input {
+.header .container .navbar .menu ul#nav-link.nav-link.active {
+  display: block;
+}
+.header .container .navbar .navbar-right .navbar-search input {
   outline: none;
   border: none;
   background: #fff url(../../img/search.png) no-repeat 7px center;
@@ -96,17 +108,31 @@ header .container .navbar-right .navbar-search input {
   transition: all 0.5s;
   cursor: pointer;
 }
-header .container .navbar-right .navbar-theme {
+.header .container .navbar .navbar-right .navbar-theme {
   padding: 0 10px;
 }
-header .container .navbar-right .navbar-theme .toggle-theme-icon:hover {
+.header .container .navbar .navbar-right .navbar-theme .toggle-theme-icon:hover {
   color: #fb811e;
   cursor: pointer;
 }
-header .container .navbar-right #menu-button {
+.header .container .navbar .navbar-right #menu-button {
   font-size: 20px;
+  font-weight: bold;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.header .container .navbar .navbar-right #menu-button.change-css {
+  color: #060606;
+}
+.header .container .navbar.change-css {
+  padding-top: 15px;
+}
+
+.header.change-css {
+  background-image: none;
+  background-color: #ffffff;
+  height: 70px;
 }
 
 footer {
@@ -314,34 +340,43 @@ footer #backToTop::after {
   border-bottom-right-radius: 20px;
 }
 
-header {
+.header {
+  background-color: transparent;
   background-image: url(/img/inner-banner.png);
-  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   right: 0;
   height: 300px;
-}
-header .container .navbar {
-  padding: 20px 60px;
+  width: 100%;
   position: fixed;
+  transition: all 0.5s;
+  z-index: 100;
 }
-header .container .navbar .navbar-left .logo {
+.header .container .navbar {
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+}
+.header .container .navbar .navbar-left .logo {
   font-size: 32px;
   text-decoration: none;
   font-family: "Volkhov", serif;
   color: #fb811e;
   position: relative;
+  transition: all 0.3s;
 }
-header .container .navbar .navbar-left .logo i {
+.header .container .navbar .navbar-left .logo i {
   position: absolute;
   top: -4px;
   left: 38px;
   font-size: 17px;
 }
-header .container .menu {
-  margin-left: 900px;
+.header .container .navbar .navbar-left .logo.change-css {
+  color: #060606;
 }
-header .container .menu #nav-link {
+.header .container .navbar .menu .nav-link {
+  display: block;
   list-style: none;
   width: 250px;
   text-align: center;
@@ -355,20 +390,23 @@ header .container .menu #nav-link {
   display: none;
   cursor: pointer;
 }
-header .container .menu #nav-link li {
+.header .container .navbar .menu .nav-link li {
   padding: 5px 0;
 }
-header .container .menu #nav-link li a {
+.header .container .navbar .menu .nav-link li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #060606;
   font-weight: 600;
 }
-header .container .menu #nav-link li a:hover {
+.header .container .navbar .menu .nav-link li a:hover {
   color: #fb811e;
   transition: all 0.5s;
 }
-header .container .navbar-right .navbar-search input {
+.header .container .navbar .menu ul#nav-link.nav-link.active {
+  display: block;
+}
+.header .container .navbar .navbar-right .navbar-search input {
   outline: none;
   border: none;
   background: #fff url(../../img/search.png) no-repeat 7px center;
@@ -380,17 +418,31 @@ header .container .navbar-right .navbar-search input {
   transition: all 0.5s;
   cursor: pointer;
 }
-header .container .navbar-right .navbar-theme {
+.header .container .navbar .navbar-right .navbar-theme {
   padding: 0 10px;
 }
-header .container .navbar-right .navbar-theme .toggle-theme-icon:hover {
+.header .container .navbar .navbar-right .navbar-theme .toggle-theme-icon:hover {
   color: #fb811e;
   cursor: pointer;
 }
-header .container .navbar-right #menu-button {
+.header .container .navbar .navbar-right #menu-button {
   font-size: 20px;
+  font-weight: bold;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.header .container .navbar .navbar-right #menu-button.change-css {
+  color: #060606;
+}
+.header .container .navbar.change-css {
+  padding-top: 15px;
+}
+
+.header.change-css {
+  background-image: none;
+  background-color: #ffffff;
+  height: 70px;
 }
 
 footer {
@@ -547,32 +599,43 @@ footer #backToTop::after {
   left: 40%;
 }
 
-header {
+.header {
+  background-color: transparent;
   background-image: url(/img/inner-banner.png);
-  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   right: 0;
   height: 300px;
+  width: 100%;
+  position: fixed;
+  transition: all 0.5s;
 }
-header .container .navbar {
+.header .container .navbar {
+  width: 100%;
+  margin: 0 auto;
   padding: 20px 60px;
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  z-index: 2;
 }
-header .container .navbar .navbar-left .logo {
+.header .container .navbar .navbar-left .logo {
   font-size: 32px;
   text-decoration: none;
   font-family: "Volkhov", serif;
   color: #fb811e;
   position: relative;
+  transition: all 0.3s;
 }
-header .container .navbar .navbar-left .logo i {
+.header .container .navbar .navbar-left .logo i {
   position: absolute;
   top: -4px;
   left: 38px;
   font-size: 17px;
 }
-header .container .menu .nav-link {
+.header .container .navbar .navbar-left .logo.change-css {
+  color: #060606;
+}
+.header .container .navbar .menu .nav-link {
   display: block;
   list-style: none;
   width: 250px;
@@ -587,23 +650,23 @@ header .container .menu .nav-link {
   display: none;
   cursor: pointer;
 }
-header .container .menu .nav-link li {
+.header .container .navbar .menu .nav-link li {
   padding: 5px 0;
 }
-header .container .menu .nav-link li a {
+.header .container .navbar .menu .nav-link li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #060606;
   font-weight: 600;
 }
-header .container .menu .nav-link li a:hover {
+.header .container .navbar .menu .nav-link li a:hover {
   color: #fb811e;
   transition: all 0.5s;
 }
-header .container .menu ul#nav-link.nav-link.active {
+.header .container .navbar .menu ul#nav-link.nav-link.active {
   display: block;
 }
-header .container .navbar-right .navbar-search input {
+.header .container .navbar .navbar-right .navbar-search input {
   outline: none;
   border: none;
   background: #fff url(../../img/search.png) no-repeat 7px center;
@@ -615,19 +678,36 @@ header .container .navbar-right .navbar-search input {
   transition: all 0.5s;
   cursor: pointer;
 }
-header .container .navbar-right .navbar-theme {
+.header .container .navbar .navbar-right .navbar-theme {
   padding: 0 10px;
 }
-header .container .navbar-right .navbar-theme .toggle-theme-icon:hover {
+.header .container .navbar .navbar-right .navbar-theme .toggle-theme-icon:hover {
   color: #fb811e;
   cursor: pointer;
 }
-header .container .navbar-right #menu-button {
+.header .container .navbar .navbar-right #menu-button {
   font-size: 20px;
+  font-weight: bold;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.header .container .navbar .navbar-right #menu-button.change-css {
+  color: #060606;
+}
+.header .container .navbar.change-css {
+  padding-top: 15px;
 }
 
+.header.change-css {
+  background-image: none;
+  background-color: #ffffff;
+  height: 70px;
+}
+
+.heading {
+  padding: 100px 0 50px 0;
+}
 .heading .container .banner {
   display: block;
   max-width: 100%;
@@ -787,134 +867,6 @@ main article .news__content .container .row .content__right .news__post .post__i
   text-decoration: underline;
 }
 
-footer {
-  position: relative;
-  padding: 100px 50px 0 50px;
-}
-footer .container .footer__content {
-  padding: 0 70px 70px 90px;
-  color: #707070;
-}
-footer .container .footer__content .footer__item h3 {
-  font-family: "Volkhov", serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: #060606;
-  margin: 0 0 30px;
-  transition: all 0.5s;
-}
-footer .container .footer__content .footer__item h3:hover .footer-logo {
-  color: #060606;
-}
-footer .container .footer__content .footer__item h3:hover .footer-leaf {
-  color: #060606;
-}
-footer .container .footer__content p {
-  font-size: 17px;
-  color: #707070;
-}
-footer .container a {
-  text-decoration: none;
-  color: #707070;
-}
-footer .container .footer__item.item_1 a {
-  transition: all 0.5s;
-}
-footer .container .footer__item.item_1 a:hover {
-  color: #fb811e;
-}
-footer .container .footer__item.item_2 .footer-logo {
-  font-family: "Volkhov", serif;
-  font-size: 32px;
-  color: #fb811e;
-  position: relative;
-  top: -10px;
-  transition: all 0.5s;
-}
-footer .container .footer__item.item_2 .footer-leaf {
-  font-size: 20px;
-  color: #fb811e;
-  position: absolute;
-  top: -5px;
-  left: 52px;
-  transition: all 0.5s;
-}
-footer .container .footer__item.item_2 .space {
-  margin-top: -16px;
-  margin-bottom: 80px;
-}
-footer .container .footer__item.item_2 .copyright {
-  color: #009f4d;
-  transition: all 0.5s;
-}
-footer .container .footer__item.item_2 .copyright:hover {
-  color: #fb811e;
-}
-footer .container .footer__item.item_3 p {
-  padding-bottom: 16px;
-}
-footer .container .footer__item.item_3 .mb-3 {
-  position: relative;
-}
-footer .container .footer__item.item_3 .mb-3 #email {
-  width: 295px;
-  height: 50px;
-  background-color: #f4f4f4;
-  border: 30px 0 0 30px;
-  border-color: #eeeeee;
-  border-style: solid;
-  border-width: 1px;
-  padding: 12px 20px;
-  margin-bottom: 32px;
-}
-footer .container .footer__item.item_3 .mb-3 .plane {
-  width: 74px;
-  height: 50px;
-  color: #ffffff;
-  border: none;
-  background-color: #009f4d;
-  border-radius: 0 30px 30px 0;
-  padding: 12px;
-  line-height: 16px;
-  text-align: center;
-  align-items: flex-start;
-  position: absolute;
-  top: 0;
-  right: 40px;
-  transition: all 0.3s;
-}
-footer .container .footer__item.item_3 .mb-3 .plane:hover {
-  opacity: 0.8;
-}
-footer .container .footer__item.item_3 .social {
-  display: flex;
-  align-items: center;
-}
-footer .container .footer__item.item_3 .social a {
-  display: inline-block;
-  font-size: 15px;
-  width: 35px;
-  height: 35px;
-  background-color: rgba(10, 191, 83, 0.08);
-  border-radius: 50%;
-  line-height: 24px;
-  text-align: center;
-  margin-right: 8px;
-  transition: all 0.5s;
-}
-footer .container .footer__item.item_3 .social a:hover {
-  color: #fb811e;
-  background-color: rgba(255, 201, 69, 0.19);
-  box-shadow: 0px 4px 7px 0px rgba(10, 10, 10, 0.24);
-}
-footer .container .footer__item.item_3 .social a i {
-  display: inline-block;
-  text-align: center;
-  line-height: 35px;
-  color: #009f4d;
-  border-radius: 50%;
-}
-
 #backToTop {
   display: none;
   color: #ffffff;
@@ -942,34 +894,43 @@ footer .container .footer__item.item_3 .social a i {
   left: 40%;
 }
 
-header {
+.header {
+  background-color: transparent;
   background-image: url(/img/inner-banner.png);
-  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   right: 0;
   height: 300px;
-}
-header .container .navbar {
-  padding: 20px 60px;
+  width: 100%;
   position: fixed;
+  transition: all 0.5s;
+  z-index: 100;
 }
-header .container .navbar .navbar-left .logo {
+.header .container .navbar {
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+}
+.header .container .navbar .navbar-left .logo {
   font-size: 32px;
   text-decoration: none;
   font-family: "Volkhov", serif;
   color: #fb811e;
   position: relative;
+  transition: all 0.3s;
 }
-header .container .navbar .navbar-left .logo i {
+.header .container .navbar .navbar-left .logo i {
   position: absolute;
   top: -4px;
   left: 38px;
   font-size: 17px;
 }
-header .container .menu {
-  margin-left: 900px;
+.header .container .navbar .navbar-left .logo.change-css {
+  color: #060606;
 }
-header .container .menu #nav-link {
+.header .container .navbar .menu .nav-link {
+  display: block;
   list-style: none;
   width: 250px;
   text-align: center;
@@ -983,20 +944,23 @@ header .container .menu #nav-link {
   display: none;
   cursor: pointer;
 }
-header .container .menu #nav-link li {
+.header .container .navbar .menu .nav-link li {
   padding: 5px 0;
 }
-header .container .menu #nav-link li a {
+.header .container .navbar .menu .nav-link li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #060606;
   font-weight: 600;
 }
-header .container .menu #nav-link li a:hover {
+.header .container .navbar .menu .nav-link li a:hover {
   color: #fb811e;
   transition: all 0.5s;
 }
-header .container .navbar-right .navbar-search input {
+.header .container .navbar .menu ul#nav-link.nav-link.active {
+  display: block;
+}
+.header .container .navbar .navbar-right .navbar-search input {
   outline: none;
   border: none;
   background: #fff url(../../img/search.png) no-repeat 7px center;
@@ -1008,17 +972,31 @@ header .container .navbar-right .navbar-search input {
   transition: all 0.5s;
   cursor: pointer;
 }
-header .container .navbar-right .navbar-theme {
+.header .container .navbar .navbar-right .navbar-theme {
   padding: 0 10px;
 }
-header .container .navbar-right .navbar-theme .toggle-theme-icon:hover {
+.header .container .navbar .navbar-right .navbar-theme .toggle-theme-icon:hover {
   color: #fb811e;
   cursor: pointer;
 }
-header .container .navbar-right #menu-button {
+.header .container .navbar .navbar-right #menu-button {
   font-size: 20px;
+  font-weight: bold;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.header .container .navbar .navbar-right #menu-button.change-css {
+  color: #060606;
+}
+.header .container .navbar.change-css {
+  padding-top: 15px;
+}
+
+.header.change-css {
+  background-image: none;
+  background-color: #ffffff;
+  height: 70px;
 }
 
 footer {
@@ -1348,34 +1326,70 @@ footer .container .footer__item.item_3 .social a i {
   border-radius: 50%;
 }
 
-header {
+#backToTop {
+  display: none;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  background-color: #009f4d;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  cursor: pointer;
+}
+#backToTop .arrow {
+  font-size: 12px;
+}
+#backToTop::after {
+  display: block;
+  content: "-";
+  color: #ffffff;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  left: 40%;
+}
+
+.header {
+  background-color: transparent;
   background-image: url(/img/inner-banner.png);
-  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   right: 0;
   height: 300px;
-}
-header .container .navbar {
-  padding: 20px 60px;
+  width: 100%;
   position: fixed;
+  transition: all 0.5s;
+  z-index: 100;
 }
-header .container .navbar .navbar-left .logo {
+.header .container .navbar {
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+}
+.header .container .navbar .navbar-left .logo {
   font-size: 32px;
   text-decoration: none;
   font-family: "Volkhov", serif;
   color: #fb811e;
   position: relative;
+  transition: all 0.3s;
 }
-header .container .navbar .navbar-left .logo i {
+.header .container .navbar .navbar-left .logo i {
   position: absolute;
   top: -4px;
   left: 38px;
   font-size: 17px;
 }
-header .container .menu {
-  margin-left: 900px;
+.header .container .navbar .navbar-left .logo.change-css {
+  color: #060606;
 }
-header .container .menu #nav-link {
+.header .container .navbar .menu .nav-link {
+  display: block;
   list-style: none;
   width: 250px;
   text-align: center;
@@ -1389,20 +1403,23 @@ header .container .menu #nav-link {
   display: none;
   cursor: pointer;
 }
-header .container .menu #nav-link li {
+.header .container .navbar .menu .nav-link li {
   padding: 5px 0;
 }
-header .container .menu #nav-link li a {
+.header .container .navbar .menu .nav-link li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #060606;
   font-weight: 600;
 }
-header .container .menu #nav-link li a:hover {
+.header .container .navbar .menu .nav-link li a:hover {
   color: #fb811e;
   transition: all 0.5s;
 }
-header .container .navbar-right .navbar-search input {
+.header .container .navbar .menu ul#nav-link.nav-link.active {
+  display: block;
+}
+.header .container .navbar .navbar-right .navbar-search input {
   outline: none;
   border: none;
   background: #fff url(../../img/search.png) no-repeat 7px center;
@@ -1414,17 +1431,31 @@ header .container .navbar-right .navbar-search input {
   transition: all 0.5s;
   cursor: pointer;
 }
-header .container .navbar-right .navbar-theme {
+.header .container .navbar .navbar-right .navbar-theme {
   padding: 0 10px;
 }
-header .container .navbar-right .navbar-theme .toggle-theme-icon:hover {
+.header .container .navbar .navbar-right .navbar-theme .toggle-theme-icon:hover {
   color: #fb811e;
   cursor: pointer;
 }
-header .container .navbar-right #menu-button {
+.header .container .navbar .navbar-right #menu-button {
   font-size: 20px;
+  font-weight: bold;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.header .container .navbar .navbar-right #menu-button.change-css {
+  color: #060606;
+}
+.header .container .navbar.change-css {
+  padding-top: 15px;
+}
+
+.header.change-css {
+  background-image: none;
+  background-color: #ffffff;
+  height: 70px;
 }
 
 footer {
@@ -1583,44 +1614,70 @@ footer #backToTop::after {
 
 .header {
   background-color: transparent;
-  transition: all 0.4s ease 0s;
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
-  position: fixed;
+  background-image: url(/img/inner-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  height: 300px;
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  z-index: 111;
+  position: fixed;
+  transition: all 0.5s;
 }
-.header .container {
-  padding: 0 40px;
+.header .container .navbar {
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
 }
-.header .container .row .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header .container .row .navbar .navbar-left .navbar-logo a {
+.header .container .navbar .navbar-left .logo {
   font-size: 32px;
   text-decoration: none;
   font-family: "Volkhov", serif;
   color: #fb811e;
   position: relative;
+  transition: all 0.3s;
 }
-.header .container .row .navbar .navbar-left .navbar-logo a i {
+.header .container .navbar .navbar-left .logo i {
   position: absolute;
-  top: -5px;
-  left: 52px;
-  font-size: 20px;
+  top: -4px;
+  left: 38px;
+  font-size: 17px;
 }
-.header .container .row .navbar .navbar-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.header .container .navbar .navbar-left .logo.change-css {
+  color: #060606;
 }
-.header .container .row .navbar .navbar-right .navbar-search {
-  margin: 0 10px;
+.header .container .navbar .menu .nav-link {
+  display: block;
+  list-style: none;
+  width: 250px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 65px;
+  right: 60px;
+  margin: 0;
+  padding: 0;
+  display: none;
+  cursor: pointer;
 }
-.header .container .row .navbar .navbar-right .navbar-search input {
+.header .container .navbar .menu .nav-link li {
+  padding: 5px 0;
+}
+.header .container .navbar .menu .nav-link li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #060606;
+  font-weight: 600;
+}
+.header .container .navbar .menu .nav-link li a:hover {
+  color: #fb811e;
+  transition: all 0.5s;
+}
+.header .container .navbar .menu ul#nav-link.nav-link.active {
+  display: block;
+}
+.header .container .navbar .navbar-right .navbar-search input {
   outline: none;
   border: none;
   background: #fff url(../../img/search.png) no-repeat 7px center;
@@ -1629,39 +1686,38 @@ footer #backToTop::after {
   width: 30px;
   height: 30px;
   border-radius: 30px;
-  cursor: pointer;
   transition: all 0.5s;
+  cursor: pointer;
 }
-.header .container .row .navbar .navbar-theme .toggle-theme-icon:hover {
+.header .container .navbar .navbar-right .navbar-theme {
+  padding: 0 10px;
+}
+.header .container .navbar .navbar-right .navbar-theme .toggle-theme-icon:hover {
   color: #fb811e;
   cursor: pointer;
 }
-.header .container .row .navbar .navbar-link {
-  display: none;
+.header .container .navbar .navbar-right #menu-button {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
 }
-.header .container .row .navbar .navbar-link a {
-  text-decoration: none;
-  padding: 0 14px;
-  text-transform: uppercase;
+.header .container .navbar .navbar-right #menu-button.change-css {
   color: #060606;
-  font-weight: 600;
 }
-.header .container .row .navbar .navbar-link a:hover {
-  color: #fb811e;
-  transition: all 0.5s;
+.header .container .navbar.change-css {
+  padding-top: 15px;
 }
 
-.heading .container img {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  height: 320px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 5px;
-  position: absolute;
-  top: 0;
-  right: 0;
+.header.change-css {
+  background-image: none;
+  background-color: #ffffff;
+  height: 70px;
+}
+
+.heading {
+  padding: 200px 0;
 }
 .heading .container .heading__text {
   padding: 70px;
@@ -1685,7 +1741,7 @@ footer #backToTop::after {
 }
 
 .info {
-  padding: 250px 200px 0 200px;
+  padding: 0px 200px 0 200px;
 }
 .info .container form h5 {
   font-family: "Volkhov", serif;
@@ -1883,4 +1939,31 @@ footer .container .footer__item.item_3 .social a i {
   line-height: 35px;
   color: #009f4d;
   border-radius: 50%;
+}
+
+#backToTop {
+  display: none;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  background-color: #009f4d;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  cursor: pointer;
+}
+#backToTop .arrow {
+  font-size: 12px;
+}
+#backToTop::after {
+  display: block;
+  content: "-";
+  color: #ffffff;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  left: 40%;
 }/*# sourceMappingURL=style.css.map */

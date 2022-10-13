@@ -3,110 +3,137 @@
 @import "./../layouts/footer";
 
 .header {
-    background-color: transparent;
-    transition: all 0.4s ease 0s;
-    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
-    position: fixed;
-    width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    z-index: 111;
-  
-    .container {
-      padding: 0 40px;
-  
-      .row {
-        .navbar {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-  
-          .navbar-left {
-            .navbar-logo {
-              a {
-                font-size: 32px;
-                text-decoration: none;
-                font-family: "Volkhov", serif;
+  background-color: transparent;
+  background-image: url(/img/inner-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  height: 300px;
+  width: 100%;
+  position: fixed;
+  transition: all .5s;
+  .container {
+    .navbar {
+      width: 100%;
+      margin: 0 auto;
+      z-index: 2;
+      .navbar-left {
+          .logo {
+            font-size: 32px;
+            text-decoration: none;
+            font-family: "Volkhov", serif;
+            color: $secondary-color;
+            position: relative;
+            transition: all .3s;
+            i {
+              position: absolute;
+              top: -4px;
+              left: 38px;
+              font-size: 17px;
+            }
+          
+          }
+          .logo.change-css {
+            color: #060606;
+          }
+      }
+      
+      .menu {
+        .nav-link {
+          display: block;
+          list-style: none;
+          width: 250px;
+          text-align: center;
+          background-color: #ffffff;
+          border-radius: 5px;
+          position: absolute;
+          top: 65px;
+          right: 60px;
+          margin: 0;
+          padding: 0;
+          display: none;
+          cursor: pointer;
+          li {
+            padding: 5px 0;
+            a {
+              text-decoration: none;
+              text-transform: uppercase;
+              color: $main-text-color;
+              font-weight: 600;
+              &:hover {
                 color: $secondary-color;
-                position: relative;
-  
-                i {
-                  position: absolute;
-                  top: -5px;
-                  left: 52px;
-                  font-size: 20px;
-                }
+                transition: all 0.5s;
               }
             }
           }
-  
-          .navbar-right {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-  
-            .navbar-search {
-              margin: 0 10px;
-  
-              input {
-                outline: none;
-                border: none;
-                background: #fff url(../../img/search.png) no-repeat 7px center;
-                border: solid 1px #eee;
-                padding: 0 10px;
-                width: 30px;
-                height: 30px;
-                border-radius: 30px;
-                cursor: pointer;
-                transition: all 0.5s;
-                }
-              }
-            }
-  
-            .navbar-theme {
-              .toggle-theme-icon {
-                &:hover {
-                  color: $secondary-color;
-                  cursor: pointer;
-                }
-              }
-            }
-  
-            .navbar-link {
-              display: none;
-  
-              a {
-                text-decoration: none;
-                padding: 0 14px;
-                text-transform: uppercase;
-                color: $main-text-color;
-                font-weight: 600;
-  
-                &:hover {
-                  color: $secondary-color;
-                  transition: all 0.5s;
-                }
-              }
+        } 
+        ul#nav-link.nav-link.active {
+          display: block;
+        }
+      }
+      .navbar-right {
+        .navbar-search {
+          input {
+            outline: none;
+            border: none;
+            background: #fff url(../../img/search.png) no-repeat 7px center;
+            border: solid 1px #eee;
+            padding: 0 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            transition: all 0.5s;
+            cursor: pointer;
+          }
+        }
+        .navbar-theme {
+          padding: 0 10px;
+          .toggle-theme-icon {
+            &:hover {
+              color: $secondary-color;
+              cursor: pointer;
             }
           }
         }
+        #menu-button {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            cursor: pointer;
+            transition: all .3s;
+        }
+        #menu-button.change-css {
+          color: #060606;
+        }
       }
     }
-  
+    .navbar.change-css {
+      padding-top: 15px;
+    }
+  }
+}
+
+.header.change-css {
+  background-image: none;
+  background-color: #ffffff;
+  height: 70px;
+} 
 
 .heading {
+    padding: 200px 0;
     .container {
-      img {
-        display: block;
-        max-width: 100%;
-        width: 100%;
-        height: 320px;
-        object-fit: cover;
-        border-radius: 5px;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
+      // img {
+      //   display: block;
+      //   max-width: 100%;
+      //   width: 100%;
+      //   height: 320px;
+      //   object-fit: cover;
+      //   border-radius: 5px;
+      //   position: absolute;
+      //   top: 0;
+      //   right: 0;
+      // }
         .heading__text {
           padding: 70px;
           position: absolute;
@@ -135,7 +162,7 @@
 
 // INFORMATION 
 .info {
-    padding: 250px 200px 0 200px;
+    padding: 0px 200px 0 200px;
     .container {
         form {
             h5 {
@@ -355,3 +382,32 @@ footer {
         }
       }  
     }
+
+// BACK TO TOP 
+#backToTop {
+  display: none;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  background-color: $primary-color;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  cursor: pointer;
+
+  .arrow {
+    font-size: 12px;
+  }
+  &::after {
+    display: block;
+    content: '-';
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 40%;
+  }
+}

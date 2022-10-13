@@ -1,5 +1,5 @@
-@import "../utils/variables";
-@import "../layouts/header";
+@import "./../utils/variables";
+@import "./../layouts/header";
 @import "./../layouts/footer";
 
 main {
@@ -194,5 +194,35 @@ footer {
               }
             }
           }
-      }  
+      }       
 }
+
+// BACK TO TOP 
+#backToTop {
+  display: none;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  background-color: $primary-color;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  cursor: pointer;
+
+  .arrow {
+    font-size: 12px;
+  }
+  &::after {
+    display: block;
+    content: '-';
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 40%;
+  }
+}
+

@@ -3,7 +3,7 @@ const page2 = document.getElementById("page-2");
 const next1 = document.getElementById("next-1");
 const backToTop = document.getElementById("backToTop");
 const showGoToTop = 100;
-
+console.log('first')
 
 searchElement.onclick = function () {
   const navbarSearchElement = document.querySelector(".navbar-search");
@@ -37,7 +37,6 @@ next1.addEventListener("click",function(e) {
   document.location.href = "page2.html";
 })
 
-
 // BACK TO TOP 
 $(document).ready(function(){
   $(window).scroll(function(){
@@ -60,6 +59,31 @@ const menuButton = document.getElementById('menu-button');
     // menuLink.style.display = 'none';
     menuLink.classList.toggle('active');
 });
+
+// CHANGE NAVBAR CSS 
+const headerChange = document.querySelector('.header');
+const logoChange = document.querySelector('.logo');
+const menuIconChange = document.querySelector('.fa-bars');
+const navbarChange = document.querySelector('.navbar');
+document.addEventListener('scroll', () => {
+  if (document.documentElement.scrollTop > 50) {
+    headerChange.classList.add('change-css');
+    logoChange.classList.add('change-css');
+    menuIconChange.classList.add('change-css');
+    navbarChange.classList.add('change-css');
+    console.log(headerChange);
+    console.log('DA AN SCROLL');
+  } else {
+    headerChange.classList.remove('change-css');
+    logoChange.classList.remove('change-css');
+    menuIconChange.classList.remove('change-css');
+    navbarChange.classList.remove('change-css');
+
+  }
+})
+
+
+
 
 
 
