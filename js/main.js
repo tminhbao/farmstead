@@ -22,13 +22,6 @@ const changeTheme = function (x) {
   x.classList.add("fa-regular fa-sun toggle-theme-icon");
 };
 
-function myFunction(x) {
-  x.classList.toggle("fa-thumbs-down");
-}
-
-document.querySelector(".video-play-icon").onclick = function () {
-  document.querySelector("small-dialog").classList.toggle("mfp-hide");
-};
 // GO TA PAGE 2
 page2.addEventListener("click", function (e) {
   e.preventDefault();
@@ -83,3 +76,5 @@ document.addEventListener("scroll", () => {
     navbarChange.classList.remove("change-css");
   }
 });
+
+// CHANGE HEADER
