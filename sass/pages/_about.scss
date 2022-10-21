@@ -31,12 +31,21 @@
 
 .about {
   .container {
-    // .about-left {
-
-    // }
+    .about-left-wrapper {
+      h5 {
+        color: $secondary-color !important;
+      }
+      h3 {
+        font-weight: 600;
+      }
+      p {
+        font-family: "Source Sans Pro", sans-serif !important;
+      }
+    }
     .about-right-wrapper {
       img {
         border-radius: 10px;
+        width: 100%;
       }
     }
   }

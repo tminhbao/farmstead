@@ -21,9 +21,12 @@ const changeTheme = function (x) {
   x.classList.add("fa-regular fa-sun toggle-theme-icon");
 };
 
-function myFunction(x) {
-  x.classList.toggle("fa-thumbs-down");
-}
+
+// GO TO PAGE 2
+//page2.addEventListener("click", function (e) {
+//  e.preventDefault();
+//  document.location.href = "page2.html";
+//});
 
 // GO TA PAGE 2 
 if (page2 && next1) {
@@ -37,6 +40,7 @@ if (page2 && next1) {
     document.location.href = "blog2.html";
   });
 }
+
 
 
 // BACK TO TOP
@@ -81,3 +85,5 @@ document.addEventListener("scroll", () => {
     navbarChange.classList.remove("change-css");
   }
 });
+
+// CHANGE HEADER
