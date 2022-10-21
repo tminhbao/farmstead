@@ -32,68 +32,60 @@
     <link rel="stylesheet" href="../css/style.min.css" />
 </head>
 <body>
-
   <header class="header">
     <div class="container">
-      <div class="row">
-        <nav class="navbar">
-          <!-- NAV LEFT  -->
-          <div class="navbar-left">
-            <div class="navbar-logo">
-              <a href="./index.html"
-                >Farmstead
-                <i class="fa fa-leaf"></i>
-              </a>
-            </div>
+      <div class="navbar">
+        <div class="navbar-left">
+          <a class="logo" href="./index.html"
+              >Farmstead
+              <i class="fa fa-leaf"></i>
+          </a>
+        </div>
+        <div class="menu">
+          <ul id="nav-link" class="nav-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="#blog-posts">Blog Posts</a></li>
+            <li><a href="">Landing Page</a></li>
+            <li><a href="">Elements Page</a></li>
+            <li><a href="">404 Page</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-right d-flex align-items-center">
+          <div class="navbar-search">
+            <input type="search" name="s" />
+          </div>
+           <!-- Switch Theme  -->
+          <div class="navbar-theme theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <!-- <input type="checkbox" id="checkbox" /> -->
+              <div class="mode-container">
+                <i
+                  class="fa-regular fa-moon toggle-theme-icon"
+                  onclick="changeTheme(this)"
+                ></i>
+                <!-- <i
+                  class="fa-regular fa-sun toggle-theme-icon"
+                  onclick="changeTheme(this)"
+                ></i>
+                <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i> -->
+              </div>
+            </label>
           </div>
 
-          <!-- NAV RIGHT  -->
-          <div class="navbar-right">
-            <!-- Search -->
-            <div class="navbar-search">
-              <input type="search" name="s" />
-            </div>
-
-            <!-- Switch Theme  -->
-            <div class="navbar-theme theme-switch-wrapper">
-              <label class="theme-switch" for="checkbox">
-                <!-- <input type="checkbox" id="checkbox" /> -->
-                <div class="mode-container">
-                  <i
-                    class="fa-regular fa-moon toggle-theme-icon"
-                    onclick="changeTheme(this)"
-                  ></i>
-                  <!-- <i
-                    class="fa-regular fa-sun toggle-theme-icon"
-                    onclick="changeTheme(this)"
-                  ></i>
-                  <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i> -->
-                </div>
-              </label>
-            </div>
-
-            <!-- Link  -->
-            <div class="navbar-link">
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#">Blog Posts</a>
-              <a href="#">Landing Page</a>
-              <a href="#">Elements Page</a>
-              <a href="#">404 Page</a>
-              <a href="#">Contact</a>
-            </div>
-          </div>
-        </nav>
+          <i id="menu-button" class="fa-solid fa-bars"></i>
+        </div>
       </div>
+    
     </div>
   </header>
 
-    <!-- HEADING  -->
-    <div class="heading">
+    <!-- BLOG  -->
+    <div class="blog__content">
       <div class="container">
-        <img src="../img/inner-banner.png" alt="" class="banner img-fluid" />
-        <div class="heading__text">
+        <div class="blog__title">
           <h4>Blog Posts</h4>
           <a class="title" href="index.html">Home</a>
         </div>
@@ -228,7 +220,7 @@
     </article>
   </main>
 
-
-    <script src="../js/main2.js"></script>
+  <!-- <script src="../js/main.js"></script> -->
+  <script src="../js/main2.js"></script>
 </body>
 </html>
