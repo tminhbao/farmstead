@@ -3,7 +3,6 @@ const page2 = document.getElementById("page-2");
 const next1 = document.getElementById("next-1");
 const backToTop = document.getElementById("backToTop");
 const showGoToTop = 100;
-console.log("first");
 
 searchElement.onclick = function () {
   const navbarSearchElement = document.querySelector(".navbar-search");
@@ -26,19 +25,19 @@ function myFunction(x) {
   x.classList.toggle("fa-thumbs-down");
 }
 
-document.querySelector(".video-play-icon").onclick = function () {
-  document.querySelector("small-dialog").classList.toggle("mfp-hide");
-};
-// GO TA PAGE 2
-page2.addEventListener("click", function (e) {
-  e.preventDefault();
-  document.location.href = "page2.html";
-});
+// GO TA PAGE 2 
+if (page2 && next1) {
+  page2.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.location.href = "blog2.html";
+  });
+  
+  next1.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.location.href = "blog2.html";
+  });
+}
 
-next1.addEventListener("click", function (e) {
-  e.preventDefault();
-  document.location.href = "page2.html";
-});
 
 // BACK TO TOP
 $(document).ready(function () {
@@ -58,8 +57,8 @@ $(document).ready(function () {
 // SHOW MENU
 const menuLink = document.getElementById("nav-link");
 const menuButton = document.getElementById("menu-button");
+
 menuButton.addEventListener("click", function () {
-  // menuLink.style.display = 'none';
   menuLink.classList.toggle("active");
 });
 
@@ -68,14 +67,13 @@ const headerChange = document.querySelector(".header");
 const logoChange = document.querySelector(".logo");
 const menuIconChange = document.querySelector(".fa-bars");
 const navbarChange = document.querySelector(".navbar");
+
 document.addEventListener("scroll", () => {
   if (document.documentElement.scrollTop > 50) {
     headerChange.classList.add("change-css");
     logoChange.classList.add("change-css");
     menuIconChange.classList.add("change-css");
     navbarChange.classList.add("change-css");
-    console.log(headerChange);
-    console.log("DA AN SCROLL");
   } else {
     headerChange.classList.remove("change-css");
     logoChange.classList.remove("change-css");

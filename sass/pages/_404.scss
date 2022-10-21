@@ -2,9 +2,10 @@
 @import "./../layouts/header";
 @import "./../layouts/footer";
 
-main {
+.page-404 {
+    padding: 100px 90px;
     .img-err {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
     }
@@ -17,6 +18,25 @@ main {
       .error {
         font-size: 150px;
         color: $primary-color;
+        .fa-circle {
+          color: rgb(190, 242, 190);
+          position: relative;
+          &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 7px solid white;
+            outline: none;
+            border-top: 7px solid $primary-color;
+            border-bottom: 7px solid $primary-color;
+            top: 5px;
+            left: 5px;
+            animation: rotate-circle 8s linear infinite;
+          }
+        }
       }
       h1 {
         font-family: "Volkhov", serif;
@@ -28,6 +48,7 @@ main {
       form {
         position: relative;
         .search-input {
+            font-family: 'Source Sans Pro', sans-serif;
             width: 460px;
             height: 60px;
             border-radius: 35px;
@@ -51,6 +72,7 @@ main {
         margin: 50px 0 0;
       .btn-signup {
         a {
+            font-family: 'Source Sans Pro', sans-serif;
             text-decoration: none;
             font-weight: 600;
             color: #060606;
@@ -64,7 +86,7 @@ main {
 footer {
     .container {
         .footer__content{
-          padding: 0 70px 70px 90px;
+          padding: 0 20px 70px 20px;
           color: $text-color;
           .footer__item {
             h3 {
@@ -195,6 +217,15 @@ footer {
             }
           }
       }       
+}
+
+@keyframes rotate-circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 // BACK TO TOP 

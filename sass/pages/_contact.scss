@@ -2,126 +2,12 @@
 @import "./../layouts/header";
 @import "./../layouts/footer";
 
-.header {
-  background-color: transparent;
+.contact {
+  // height: 300px;
   background-image: url(/img/inner-banner.png);
-  background-repeat: no-repeat;
+  background-position: bottom;
   background-size: cover;
-  top: 0;
-  right: 0;
-  height: 300px;
-  width: 100%;
-  position: fixed;
-  transition: all .5s;
-  .container {
-    .navbar {
-      width: 100%;
-      margin: 0 auto;
-      z-index: 2;
-      .navbar-left {
-          .logo {
-            font-size: 32px;
-            text-decoration: none;
-            font-family: "Volkhov", serif;
-            color: $secondary-color;
-            position: relative;
-            transition: all .3s;
-            i {
-              position: absolute;
-              top: -4px;
-              left: 38px;
-              font-size: 17px;
-            }
-          
-          }
-          .logo.change-css {
-            color: #060606;
-          }
-      }
-      
-      .menu {
-        .nav-link {
-          display: block;
-          list-style: none;
-          width: 250px;
-          text-align: center;
-          background-color: #ffffff;
-          border-radius: 5px;
-          position: absolute;
-          top: 65px;
-          right: 60px;
-          margin: 0;
-          padding: 0;
-          display: none;
-          cursor: pointer;
-          li {
-            padding: 5px 0;
-            a {
-              text-decoration: none;
-              text-transform: uppercase;
-              color: $main-text-color;
-              font-weight: 600;
-              &:hover {
-                color: $secondary-color;
-                transition: all 0.5s;
-              }
-            }
-          }
-        } 
-        ul#nav-link.nav-link.active {
-          display: block;
-        }
-      }
-      .navbar-right {
-        .navbar-search {
-          input {
-            outline: none;
-            border: none;
-            background: #fff url(../../img/search.png) no-repeat 7px center;
-            border: solid 1px #eee;
-            padding: 0 10px;
-            width: 30px;
-            height: 30px;
-            border-radius: 30px;
-            transition: all 0.5s;
-            cursor: pointer;
-          }
-        }
-        .navbar-theme {
-          padding: 0 10px;
-          .toggle-theme-icon {
-            &:hover {
-              color: $secondary-color;
-              cursor: pointer;
-            }
-          }
-        }
-        #menu-button {
-            font-size: 20px;
-            font-weight: bold;
-            color: #ffffff;
-            cursor: pointer;
-            transition: all .3s;
-        }
-        #menu-button.change-css {
-          color: #060606;
-        }
-      }
-    }
-    .navbar.change-css {
-      padding-top: 15px;
-    }
-  }
-}
-
-.header.change-css {
-  background-image: none;
-  background-color: #ffffff;
-  height: 70px;
-} 
-
-.heading {
-    padding: 200px 0;
+  background-repeat: no-repeat;
     .container {
       // img {
       //   display: block;
@@ -134,8 +20,8 @@
       //   top: 0;
       //   right: 0;
       // }
-        .heading__text {
-          padding: 70px;
+        .contact__content {
+          padding: 0 65px;
           position: absolute;
           top: 150px;
           h4 {
@@ -144,7 +30,9 @@
             font-weight: 700;
           }
           .breadcrumb {
+            font-family: 'Source Sans Pro', sans-serif;
             .breadcrumb-item a {
+              font-family: 'Source Sans Pro', sans-serif;
               text-decoration: none;
               font-size: 15px;
               font-weight: 700;
@@ -154,6 +42,10 @@
                 color: $secondary-color;
               }
             }
+            .breadcrumb-item.active {
+              font-family: 'Source Sans Pro', sans-serif;
+            } 
+            
           } 
          
         }
@@ -162,7 +54,7 @@
 
 // INFORMATION 
 .info {
-    padding: 0px 200px 0 200px;
+    padding: 140px 200px 0px 200px;
     .container {
         form {
             h5 {
@@ -177,21 +69,26 @@
                 margin: 0 0 24px;
             }
             .info__item {
+                text-align: left;
+                margin-left: 0;
                 h6 {
                     font-family: "Volkhov", serif;
                     font-size: 18px;
                     font-weight: 600;
                     margin-bottom: 30px;
+                    text-align: left;
                  i {
                     padding-right: 15px;
                     color: $secondary-color;
                  }
                 }
                 p {
+                  font-family: 'Source Sans Pro', sans-serif;
                     color: #707070;
                     margin-top: -20px;
                 }
                 a {
+                  font-family: 'Source Sans Pro', sans-serif;
                     color: #707070;
                     text-decoration: none;
                 }
@@ -220,12 +117,14 @@
               border: 1px solid $secondary-color;
             }
             .info-input {
+                font-family: 'Source Sans Pro', sans-serif;
                 margin-bottom: 16px;
                 padding: 12px 10px;
                 box-shadow: none;
                 }
             }
             .area-text {
+                    font-family: 'Source Sans Pro', sans-serif;
                     padding-top: 12px;
                     padding-left: 10px;
                     border-radius: 5px;
@@ -250,7 +149,7 @@
 footer {
     .container {
       .footer__content{
-        padding: 0 70px 70px 90px;
+        padding: 0 20px 70px 20px;
         color: $text-color;
         .footer__item {
           h3 {

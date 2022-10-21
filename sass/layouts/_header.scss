@@ -2,20 +2,17 @@
 
 .header {
   background-color: transparent;
-  background-image: url(/img/inner-banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 0;
-  right: 0;
-  height: 300px;
   width: 100%;
   position: fixed;
+  top: 0;
+  right: 0;
   transition: all .5s;
   z-index: 100;
   .container {
     .navbar {
       width: 100%;
-      margin: 0 auto;
+      padding: 20px 0;
+      position: relative;
       z-index: 2;
       .navbar-left {
           .logo {
@@ -27,9 +24,9 @@
             transition: all .3s;
             i {
               position: absolute;
-              top: -4px;
-              left: 38px;
-              font-size: 17px;
+              top: -6px;
+              left: 52px;
+              font-size: 20px;
             }
           
           }
@@ -42,7 +39,7 @@
         .nav-link {
           display: block;
           list-style: none;
-          width: 250px;
+          width: 230px;
           text-align: center;
           background-color: #ffffff;
           border-radius: 5px;
@@ -54,8 +51,9 @@
           display: none;
           cursor: pointer;
           li {
-            padding: 5px 0;
+            padding: 7px 0;
             a {
+              font-family: 'Source Sans Pro', sans-serif;
               text-decoration: none;
               text-transform: uppercase;
               color: $main-text-color;
@@ -95,6 +93,9 @@
               color: $secondary-color;
               cursor: pointer;
             }
+          }
+          .fa-moon {
+            color: white;
           }
         }
         #menu-button {
