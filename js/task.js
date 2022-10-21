@@ -6,22 +6,25 @@ document.addEventListener("scroll", () => {
   if (document.documentElement.scrollTop > 50) {
     headerElement.style.backgroundColor = "white";
     logoElement.style.color = "#000";
-    iconThemeElement.style.color = "#000";
+    iconThemeElement.style.color = "#000 !important";
     faBarElement.style.color = "#000";
   } else {
     // Trước khi Scroll
     headerElement.style.backgroundColor = "transparent";
     logoElement.style.color = "#fb811e";
     faBarElement.style.color = "#fff";
-    navbarElement.style.color = "transparent";
-    iconElement.style.color = "#fff";
+    //navbarElement.style.color = "transparent";
+    iconThemeElement.style.color = "#fff";
   }
 });
 
 const barElement = document.querySelector(".fa-bars");
-console.log(barElement);
 barElement.onclick = () => {
   document.querySelector(".navbar-link").style.display = "block";
+};
+
+document.querySelector(".navbar-link").onmouseleave = () => {
+  document.querySelector(".navbar-link").style.display = "none";
 };
 
 function changeDisplay(x) {

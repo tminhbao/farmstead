@@ -21,27 +21,24 @@ const changeTheme = function (x) {
   x.classList.add("fa-regular fa-sun toggle-theme-icon");
 };
 
-
 // GO TO PAGE 2
 //page2.addEventListener("click", function (e) {
 //  e.preventDefault();
 //  document.location.href = "page2.html";
 //});
 
-// GO TA PAGE 2 
+// GO TA PAGE 2
 if (page2 && next1) {
   page2.addEventListener("click", function (e) {
     e.preventDefault();
     document.location.href = "blog2.html";
   });
-  
+
   next1.addEventListener("click", function (e) {
     e.preventDefault();
     document.location.href = "blog2.html";
   });
 }
-
-
 
 // BACK TO TOP
 $(document).ready(function () {
