@@ -50,6 +50,58 @@
       }
     }
   }
+  .navbar-left {
+    margin: 0 20px;
+    color: white !important;
+    .navbar-logo {
+      a {
+        font-size: 16px !important;
+      }
+    }
+  }
+  .banner-left {
+    .banner-left-content {
+      h2 {
+        font-size: 100px !important;
+        left: 80px;
+      }
+    }
+    .banner-left-desc {
+      background-color: white;
+      left: 20px;
+      top: 0;
+      margin-left: 30px;
+      padding: 16px 20px;
+      width: 76vw;
+    }
+    .btn.btn-style {
+      margin-top: 0 !important;
+    }
+  }
+  .btn.btn-style.mt-4.product-button {
+    font-size: 10px !important;
+    margin-top: 0 !important;
+    padding: 6px 16px;
+    margin-bottom: 4px;
+  }
+  #discover-p {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .gallery-title {
+    font-size: 1rem;
+  }
+  .product-h3 {
+    font-size: 16px;
+  }
+  #carousel-inner {
+    img {
+      height: 90%;
+    }
+  }
+  .imginfo__box {
+    left: -44px !important;
+  }
 }
 
 /* Tablets  */
