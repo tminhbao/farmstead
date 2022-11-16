@@ -1130,6 +1130,9 @@ footer #backToTop::after {
   height: 100%;
 }
 
+.services {
+  padding: 80px 0;
+}
 .services .container .services-item {
   padding: 50px 35px;
   z-index: 1;
@@ -4503,6 +4506,9 @@ footer #backToTop::after {
   height: 100%;
 }
 
+.services {
+  padding: 80px 0;
+}
 .services .container .services-item {
   padding: 50px 35px;
   z-index: 1;
