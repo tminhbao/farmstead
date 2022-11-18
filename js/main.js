@@ -21,50 +21,49 @@ const changeTheme = function (x) {
   x.classList.add("fa-regular fa-sun toggle-theme-icon");
 };
 
-
 // GO TO PAGE 2
 //page2.addEventListener("click", function (e) {
 //  e.preventDefault();
 //  document.location.href = "page2.html";
 //});
 
-// GO TA PAGE 2 
+// GO TA PAGE 2
 if (page2 && next1) {
   page2.addEventListener("click", function (e) {
     e.preventDefault();
     document.location.href = "blog2.html";
   });
-  
+
   next1.addEventListener("click", function (e) {
     e.preventDefault();
     document.location.href = "blog2.html";
   });
 }
 
-
-
 // BACK TO TOP
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() >= 300) {
-      $("#backToTop").fadeIn();
-    } else {
-      $("#backToTop").fadeOut();
-    }
+// $(document).ready(function () {
+//   $(window).scroll(function () {
+//     if ($(this).scrollTop() >= 300) {
+//       $("#backToTop").fadeIn();
+//     } else {
+//       $("#backToTop").fadeOut();
+//     }
 
-    $("#backToTop").click(function () {
-      $("html", "body").animate({ scrollTop: 0 }, 1000);
-    });
-  });
-});
+//     $("#backToTop").click(function () {
+//       $("html", "body").animate({ scrollTop: 0 }, 1000);
+//     });
+//   });
+// });
 
 // SHOW MENU
 const menuLink = document.getElementById("nav-link");
 const menuButton = document.getElementById("menu-button");
 
-menuButton.addEventListener("click", function () {
-  menuLink.classList.toggle("active");
-});
+if (menuButton && menuLink) {
+  menuButton.addEventListener("click", function () {
+    menuLink.classList.toggle("active");
+  });
+}
 
 // CHANGE NAVBAR CSS
 const headerChange = document.querySelector(".header");
